@@ -31,6 +31,11 @@
     font-family: verdana;
     font-size: 30px;
   }
+  h6 {
+    color: white;
+    font-family: verdana;
+    font-size: 20px;
+  }
   li {
     color: white;
     font-family: verdana;
@@ -45,6 +50,37 @@
   padding-left: 5%;
   padding-right: 5%;
 }
+.footer {
+  font-size: 10px;
+  padding-right: 5%;
+  text-align: right;
+}
+.cardContainer {
+  overflow: hidden; /* Important for containing the floated elements */
+  padding-left: 20%;
+}
+.cardText {
+  float: left;
+  margin-right: 20px;
+}
+.cardButton {
+  float: left;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 70px;
+  width: 100px;
+
+  background-color: #eee;
+  cursor: pointer;
+}
+.cardButton:hover {
+  background-color: #ccc;
+}
+.cardText2 {
+  float: left;
+  margin-left: 30px;
+  margin-top: 40px;
+}
 
 
 .collapsible {
@@ -56,7 +92,7 @@
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 26px;
 }
 .active, .collapsible:hover {
   background-color: #ccc;
@@ -118,8 +154,9 @@
 
   <button type="button" class="collapsible">Timeline</button>
   <div class="content">
-    <p>Filming may begin when the themes are announced, February 15th. Films are due February 28th at 11:59pm.
-      <br> This gives you two weeks to do all script writing, filming, and editing required for your film. Use your time wisely :)
+    <p>The themes will be announced on February 15th. 
+      <br><br>Films are due February 28th at 11:59pm.
+      <br> <br>This gives you two weeks to do all script writing, filming, and editing for your film. Use the time wisely :)
     </p>
   </div>
 
@@ -137,12 +174,17 @@
 
   <button type="button" class="collapsible">Marking criteria/awards</button>
   <div class="content">
-    <p>To be released when the themes are announced, but here are
-      a few possible award categories:</p>
-      <li>award idea 1</li>
-      <li>award idea 2</li>
-      <li>etc</li>
+    <p>We don't have marking criteria, instead we have a bunch of awards 
+      that can be won. Here are a few of the award categories:</p>
+      <li>Best film</li>
+      <li>Most creative use of the themes</li>
+      <li>Best sound design</li>
+      <li>Funniest joke</li>
+      <li>Best actor</li>
+      <li>Worst actor</li>
+      <li>...and more!</li>
       <p>Trophies will be supplied to winners of the various categories of awards, with judging being carried out by all participants during the GREGS award ceremony (everyone gets to vote).</p>
+      <h6>Note that the actual awards given out on the night will depend on what sort of films are submitted. E.g. if no comedy films are submitted, the 'best joke' award won't be used.</h6>
   </div>
 
   <button type="button" class="collapsible">What if I'm not in Canberra?</button>
@@ -151,22 +193,28 @@
       <br> <br> So find some people to make a film with, or do it by yourself. Good luck :) </p>
   </div>
 
-  <button type="button" class="collapsible">I'm really busy right now. Can't we do this some other time?</button>
+  <button type="button" class="collapsible">I'm really busy over the next couple of weeks. Can't we do this some other time?</button>
   <div class="content">
-    <p>This whole thing is just for fun, so it's ok if you don't make something worthy of Sundance. So just make something a little bit silly and have fun with it!
+    <p>This whole thing is just for fun, so it's ok if you don't make something worthy of Sundance. Just make something a little bit silly and have fun with it!
       <br><br> If time is really a concern for you, we suggest you pick a role that won't be too time consuming.
-      <br> For example, volunteering to be an actor in films that others have written probably won't take more than a few hours out of your day.
+      <br> For example, just being an actor probably won't take more than a few hours out of your day.
       <br> On the flip side, editing can be a long and tedious task, so only volunteer for this if you're schedule is sufficiently empty :)
     </p>
   </div>
 
   <button type="button" class="collapsible">I have a question that wasn't answered by the FAQ</button>
   <div class="content">
-    <p>Send one of the hosts a text! Use this handy-dandy table to decide who to message based on what day it is!
-       <br> <br>Monday: Spike <br> Tuesday: Isi <br> Wednesday: Graham <br>
-       Thursday: Spike <br> Friday: Isi <br> Saturday: Graham <br>
-       Sunday: Roll a D6. If it’s a multiple of 3 text Graham. If not, but it’s a multiple of 2, text Isi. Otherwise, text spike.
-       </p>
+    <p>Send one of the hosts a text! Use this handy-dandy table to decide who to message based on what day it is:</p>
+      <li>Monday: Spike
+      <li> Tuesday: Isi
+      <li> Wednesday: Graham 
+      <li>Thursday: Roll a D6. If it’s a multiple of 3 text Graham. If not, but it’s a multiple of 2, text Isi. Otherwise, text spike.
+      <li> Friday: Spike 
+      <li> Saturday: Isi 
+      <li> Sunday: Graham
+      <li>
+        Is it past 9pm Canberra time? Ignore the above recommendations. Instead, ask Joseph how many beers he's had today. If it's 0, text Isi. If it's 1, text Spike. If it's more than 1, text Graham.
+         </li>
   </div>
 
 </div>
@@ -191,11 +239,32 @@ for (i = 0; i < coll.length; i++) {
 
 
 <p class="mainText">
-  As an optional component, participants may choose to design a movie poster for their film. These posters will be on display during the award ceremony. A poster design category will be included in the ceremony.
-  <br> Posters are to be emailed to Isi prior to the award show.
+  As an optional component, participants may choose to design a movie poster for their film. These posters will be on display during the award ceremony.
+  <br>A poster design category will be included in the ceremony.
+  <br><br> Posters are to be emailed to Isi prior to the award show.
 </p>
-<!-- something about how we are competing with the french film festival, and ours will be better!
- https://www.affrenchfilmfestival.org/
-  -->
+<br>
+
+<div class="footer">
+  <p>We can't wait to see what you create!</p>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="cardContainer">
+<p class="cardText">Think of a card. Any card.
+  <br> Got it? Great. Click this button ->
+</p>
+<button class="cardButton" onclick="pickCard()">Button :)</button>
+<p class="cardText2" id="cardText"></p>
+</div>
+<!-- Code that does the random card picker thing -->
+<script>
+  var cards = ['8 of Diamonds', '7 of Diamonds', '5 of Spades', '3 of Clubs', '9 of Diamonds', '3 of Hearts', '3 of Spades', 'Jack of Spades', 'Queen of Clubs', '10 of Diamonds', '5 of Diamonds', 'Queen of Hearts', '7 of Spades', 'Ace of Spades', '6 of Clubs', '6 of Spades', '4 of Hearts', 'Jack of Hearts', '8 of Hearts', 'Jack of Clubs', 'Queen of Diamonds', '5 of Hearts', '8 of Clubs', '4 of Clubs', '6 of Diamonds', 'Ace of Hearts', '9 of Spades', '7 of Clubs', '7 of Hearts', '10 of Spades', '9 of Clubs', 'King of Diamonds', '8 of Spades', '10 of Hearts', 'Ace of Diamonds', '4 of Diamonds', 'King of Clubs', '2 of Spades', '2 of Clubs', '10 of Clubs', '3 of Diamonds', '6 of Hearts', 'King of Hearts', '2 of Diamonds', '4 of Spades', '2 of Hearts', 'King of Spades', 'Jack of Diamonds', '5 of Clubs', 'Ace of Clubs', 'Queen of Spades', '9 of Hearts']
+  var output = document.getElementById("cardText");
+  function pickCard() {
+    output.textContent = cards.pop()
+  }
+ 
+
+</script>
 
 </body>
