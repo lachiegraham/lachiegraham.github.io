@@ -56,7 +56,7 @@
   text-align: right;
 }
 .cardContainer {
-  overflow: hidden; /* Important for containing the floated elements */
+  overflow: hidden;
   padding-left: 20%;
 }
 .cardText {
@@ -71,6 +71,7 @@
   width: 100px;
 
   background-color: #eee;
+  color: #333;
   cursor: pointer;
 }
 .cardButton:hover {
@@ -113,6 +114,29 @@
   overflow: hidden;
   background-color: #2e2e2e;
 }
+
+.container {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: center; /* Center the images horizontally */
+  gap: 20px; /* Space between images */
+  padding: 20px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center; /* Center text below image */
+  text-align: center; /* Center text within its container */
+}
+
+.image-container img {
+  max-width: 200px; /* Adjust image size as needed */
+  height: auto;
+}
+
+.image-container p {
+  margin-top: 10px; /* Space between image and text */
+}
   </style>
 </head>
 <!-- END METADATA -->
@@ -141,14 +165,22 @@
 </div>
 
 
-
-<div> 
-  <h2>Meet the hosts</h2>
-<p>image of Isagreg to go here</p>
-<p>image of Spike Gregsley to go here</p>
-<p>image of Gregham to go here</p>
+<h2>Meet the hosts</h2>
+<div class="container"> 
+  <div class="image-container">
+    <img src="v3_0768629.jpg" alt="Image 1">
+    <p>Isagreg</p>
+  </div>
+  <div class="image-container">
+    <img src="007113.jpg" alt="Spike">
+    <p>Spike Gregsley</p>
+  </div>
+  <div class="image-container">
+    <img src="0352665.jpg" alt="Image 3">
+    <p>Gregham</p>
+  </div>
 </div>
-
+<br>
 <div class="mainText">
   <h2>FAQ</h2>
 
