@@ -3,15 +3,114 @@
     <title>Lachie Graham</title>
     <link rel="icon" href="favicon.ico">
     <meta name="description" content="My portfolio, hosted with Github Pages. Featuring my Honours thesis on CHERI, and some hobby projects of chocolate milk reviews and ice cream rankings.">
+    <style>
+        /* @font-face { font-family: Almie; src: url('Almie-Regular-BF666cfe538b8cd.otf'); } */
+        body {
+            background-color: wheat;
+        }
+        nav {
+            border-bottom: 1px solid black;
+            height: 30px;
+        }
+        .headline {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            
+        }
+        .subheading {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .project-folder {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .project-item {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: auto;
+            border-bottom: 1px solid black;
+            background-color: aqua;
+        }
+
+        h1 {
+              text-align: center;
+        }
+        h2, .project-folder, .headline, .subheading {
+            margin-left: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 80px;
+            padding: 10px;
+            border-top: 1px solid black;
+        }
+    </style>
 </head>
 <body>
-<p>Hello</p>
-<a href=ChocolateMilkRankings> Chocolate Milk Rankings </a>
-<br>
-<a href=IceCreamRankings> Ice Cream Rankings </a>
-<br>
-<br>
-<br>
-<p><a href="https://drive.google.com/file/d/1qeZ0bUwvxmRV2kqoa-gEMunrMV6SglYX/view?usp=sharing">Honours Thesis</a> on applications of the CHERI architecture.</p>
-<p><a href="https://github.com/lachiegraham/HackathonApp">AI Speech Therapy webapp</a> - 1st place winner of the ANUEC hackathon 2024</p>
+    <nav>
+
+    </nav>
+<div class="headline">
+    <p>This is a little bit work in progress, sorry it's a little ugly but the content is there.</p>
+</div>
+<div class="subheading">
+    <p>subheading</p>
+</div>
+<h1>Projects</h1>
+
+<h2>University Projects</h2>
+<div class="project-folder university-projects">
+    <div class="project-item">
+    <p>Game Dev game - made in unity in a team of 4. <a href="https://oscarczer.itch.io/kronos">Link to game</a>. Things I did:</p>
+        <ul>
+            <li>Camera system</li>
+            <li>Popup that shows time lost/gained<ul><li>Also the tutorial variant of this popup</li></ul></li>
+            <li>Timer in background and associated animations</li>
+            <li>First bossfight</li>
+            <li>Level design for levels 2 and 3</li>
+            <li>Game pausing, credits scene, upgrades shop, bug fixes, usability improvements, etc.</li>
+        </ul>
+    </div>
+    
+    <div class="project-item">
+        <p><a href="https://drive.google.com/file/d/1qeZ0bUwvxmRV2kqoa-gEMunrMV6SglYX/view?usp=sharing">Honours Thesis</a> on applications of the CHERI architecture.</p>
+    </div>
+</div>
+
+
+<h2>Extra-Curricular Projects</h2>
+<div class="project-folder extra-curricular">
+    <div class="project-item">
+        <img src="placeholder.png" alt="Hackathon App Screenshot" style="width:100%; height:auto;">
+        <p><a href="https://github.com/lachiegraham/HackathonApp">AI Speech Therapy webapp</a> - 1st place winner of the ANUEC hackathon 2024. Team of 4.</p>
+    </div>
+    <div class="project-item">
+        <p>Game jam entry - GMTK Game Jam 2019.<br>Team of 2 - I did everything except for art and music. <a href="https://lachiegraham.itch.io/the-back-wall">Link to game</a>.</p>
+    </div>
+
+</div>
+
+<h2>Hobby Projects</h2>
+<div class="project-folder hobby-projects">
+    <div class="project-item">
+        <img src="placeholder.png" alt="Chocolate Milk Rankings Screenshot" style="width:100%; height:auto;">
+        <p><a href=ChocolateMilkRankings> Chocolate Milk Rankings</a> website.</p>
+        <p>Made with html/css/js, featuring a Live Pricing page that piggybacks off Woolworths API, uses Azure functions.</p>
+    </div>
+    <div class="project-item">
+        <a href=IceCreamRankings> Ice Cream Rankings </a>
+    </div>
+</div>
+<div class="footer">
+    <p>© Lachie Graham 2025</p>
+</div>
+
 </body>
