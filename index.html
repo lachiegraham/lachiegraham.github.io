@@ -3,40 +3,52 @@
     <title>Lachie Graham</title>
     <link rel="icon" href="favicon.ico">
     <meta name="description" content="My portfolio, hosted with Github Pages. Featuring my Honours thesis on CHERI, and some hobby projects of chocolate milk reviews and ice cream rankings.">
+    <!-- get roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- end get roboto font -->
     <style>
-        /* @font-face { font-family: Almie; src: url('Almie-Regular-BF666cfe538b8cd.otf'); } */
         body {
-            background-color: wheat;
+            background-color: #232323;
+            background-image: url("bg1.jpg"); /* Specify the image file path */
+            background-repeat: no-repeat; /* Prevents the image from tiling */
+            background-size: 150%; /* cover - Scales the image to cover the entire container */
+            background-attachment: fixed; /* Keeps the background image in place while scrolling */
+            background-position: center;
+
+            color: white;
         }
         nav {
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid white;
             height: 30px;
         }
         .headline {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 24px;
-            margin-top: 20px;
+            font-size: 56px;
+            margin-top: 150px;
             margin-bottom: 10px;
             
         }
         .subheading {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 18px;
-            margin-bottom: 20px;
+            font-size: 22px;
+            margin-bottom: 200px;
         }
         .project-folder {
             display: flex;
             flex-direction: row;
-            gap: 15px;
-            margin-bottom: 15px;
+            gap: 50px;
+            margin-bottom: 150px;
         }
         .project-item {
             display: flex;
             flex-direction: column;
-            width: 200px;
+            width: 300px;
             height: auto;
-            border-bottom: 1px solid black;
-            background-color: aqua;
+            border-bottom: 1px solid white;
+            font-size: large;
+            /* background-color: #232323; */
         }
 
         h1 {
@@ -50,26 +62,42 @@
             text-align: center;
             margin-top: 80px;
             padding: 10px;
-            border-top: 1px solid black;
+            border-top: 1px solid white;
+        }
+
+        .roboto {
+            font-family: "Roboto Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        a {
+            text-decoration: none;
+            color: white;
         }
     </style>
 </head>
 <body>
     <nav>
-
+        <p class="roboto">LACHLAN GRAHAM</p>
     </nav>
 <div class="headline">
-    <p>This is a little bit work in progress, sorry it's a little ugly but the content is there.</p>
+    <p class="roboto">I'M A FULL-STACK DEVELOPER, SYSTEMS ENGINEER, AND GAME DESIGNER WITH A PASSION FOR MAKING THINGS EASY AND INTUITIVE TO USE.</p>
 </div>
 <div class="subheading">
-    <p>subheading</p>
+    <p class="roboto">Scroll down to see some of the things I've made over the years.</p>
 </div>
-<h1>Projects</h1>
+<h1 class="roboto">Projects</h1>
 
-<h2>University Projects</h2>
+<h2 class="roboto">University Projects</h2>
 <div class="project-folder university-projects">
-    <div class="project-item">
-    <p>Game Dev game - made in unity in a team of 4. <a href="https://oscarczer.itch.io/kronos">Link to game</a>. Things I did:</p>
+    <a href="https://drive.google.com/file/d/1qeZ0bUwvxmRV2kqoa-gEMunrMV6SglYX/view?usp=sharing" class="project-item">
+        <img src="thesis_title_page.png">
+        <p>Honours Thesis on applications of the CHERI architecture. Written by me, not by some AI.</p>
+    </a>
+    <a href="https://oscarczer.itch.io/kronos" class="project-item">
+        <img src="kronos.png">
+    <p>Kronos - game made in unity in a team of 4. Things I did:</p>
         <ul>
             <li>Camera system</li>
             <li>Popup that shows time lost/gained<ul><li>Also the tutorial variant of this popup</li></ul></li>
@@ -78,39 +106,38 @@
             <li>Level design for levels 2 and 3</li>
             <li>Game pausing, credits scene, upgrades shop, bug fixes, usability improvements, etc.</li>
         </ul>
-    </div>
-    
-    <div class="project-item">
-        <p><a href="https://drive.google.com/file/d/1qeZ0bUwvxmRV2kqoa-gEMunrMV6SglYX/view?usp=sharing">Honours Thesis</a> on applications of the CHERI architecture.</p>
-    </div>
+    </a>
 </div>
 
 
-<h2>Extra-Curricular Projects</h2>
+<h2 class="roboto">Extra-Curricular Projects</h2>
 <div class="project-folder extra-curricular">
-    <div class="project-item">
-        <img src="placeholder.png" alt="Hackathon App Screenshot" style="width:100%; height:auto;">
-        <p><a href="https://github.com/lachiegraham/HackathonApp">AI Speech Therapy webapp</a> - 1st place winner of the ANUEC hackathon 2024. Team of 4.</p>
-    </div>
-    <div class="project-item">
-        <p>Game jam entry - GMTK Game Jam 2019.<br>Team of 2 - I did everything except for art and music. <a href="https://lachiegraham.itch.io/the-back-wall">Link to game</a>.</p>
-    </div>
+    <a href="https://github.com/lachiegraham/HackathonApp" class="project-item">
+        <img src="ai_speech_therapy.png" alt="Hackathon App Screenshot" style="width:100%; height:auto;">
+        <p>AI Speech Therapy webapp - 1st place winner of the ANUEC hackathon 2024. Team of 4.</p>
+    </a>
+    <a href="https://lachiegraham.itch.io/the-back-wall" class="project-item">
+        <img src="thebackwall_level1.png">
+        <p>Game jam entry - GMTK Game Jam 2019.<br>Team of 2 - I did everything except for art and music.</p>
+    </a>
 
 </div>
 
-<h2>Hobby Projects</h2>
+<h2 class="roboto">Hobby Projects</h2>
 <div class="project-folder hobby-projects">
-    <div class="project-item">
-        <img src="placeholder.png" alt="Chocolate Milk Rankings Screenshot" style="width:100%; height:auto;">
-        <p><a href=ChocolateMilkRankings> Chocolate Milk Rankings</a> website.</p>
-        <p>Made with html/css/js, featuring a Live Pricing page that piggybacks off Woolworths API, uses Azure functions.</p>
-    </div>
-    <div class="project-item">
-        <a href=IceCreamRankings> Ice Cream Rankings </a>
-    </div>
+    <a href=ChocolateMilkRankings class="project-item">
+        <img src="chocolate_milk_site.png" alt="Chocolate Milk Rankings Screenshot" style="width:100%; height:auto;">
+        <p>Chocolate Milk Rankings website.</p>
+        <p>Made with html/css/js, featuring a Live Pricing page that piggybacks off Woolworths API, and uses Azure functions.</p>
+    </a>
+    <a href=IceCreamRankings class="project-item">
+        <img src="icecream_site.png">
+        <p>Ice Cream Rankings website</p>
+        <p>Similar to the chocolate milk website. I like dairy okay?</p>
+    </a>
 </div>
 <div class="footer">
-    <p>© Lachie Graham 2025</p>
+    <p class="roboto">© Lachie Graham 2025</p>
 </div>
 
 </body>
